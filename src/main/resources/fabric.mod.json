@@ -1,0 +1,32 @@
+{
+  "schemaVersion": 1,
+  "id": "happy-piggies",
+  "version": "${version}",
+  "name": "Happy Piggies",
+  "description": "A simple mod that prevents Zombie Pigmen from being damaged by a sweeping sword attack",
+  "authors": [
+    "Broman"
+  ],
+  "contact": {
+    "website": "https://broman.dev"
+  },
+  "license": "MIT",
+  "icon": "assets/happy-piggies/icon.png",
+  "environment": "*",
+  "entrypoints": {
+    "client": [
+      "dev.broman.happypiggies.client.HappyPiggiesClient"
+    ],
+    "main": [
+      "dev.broman.happypiggies.HappyPiggies"
+    ]
+  },
+  "mixins": [
+    "happy-piggies.mixins.json"
+  ],
+  "depends": {
+    "fabricloader": ">=0.12.12",
+    "fabric": "*",
+    "minecraft": "1.18.1"
+  }
+}
